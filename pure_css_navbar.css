@@ -10,7 +10,7 @@ section:not(:target) {
 }
 
 /* Then, show only the default section. */
-section:nth-child(3) {
+section:not(:target) + section:not(:target) + section {
     display: block;
 }
 
